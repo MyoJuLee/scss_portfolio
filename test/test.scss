@@ -10,9 +10,10 @@ h1{
 
   span{
     color: purple;
-    
+
     &:hover{
       color: gold;
+      cursor: pointer;
     }
   }
 }

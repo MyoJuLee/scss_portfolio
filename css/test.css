@@ -14,4 +14,5 @@ h1 span {
 }
 h1 span:hover {
   color: gold;
+  cursor: pointer;
 }/*# sourceMappingURL=test.css.map */
