@@ -1,0 +1,17 @@
+body {
+  font-size: 18px;
+  color: #000;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+h1 span {
+  color: purple;
+}
+h1 span:hover {
+  color: gold;
+}/*# sourceMappingURL=test.css.map */
