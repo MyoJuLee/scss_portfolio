@@ -1,0 +1,19 @@
+/* Variables */
+/* buttons */
+.btns .btn {
+  border: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 10px 30px;
+  border-radius: 3px;
+  color: #fff;
+}
+.btns .primary {
+  background-color: royalblue;
+}
+.btns .secondary {
+  background-color: yellowgreen;
+}
+.btns .warning {
+  background-color: crimson;
+}
