@@ -1,0 +1,29 @@
+/* Built-in Funtion : map-get */
+$color:(
+  font-primary: #F5F0BB,
+  font-secondary: #DBDFAA,
+  font-focus: #B3C890,
+  bgc-primary: #73A9AD,
+  bgc-secondary: #94AF9F
+);
+$headline-font: (
+  healine-font-large: 45px,
+  healine-font-medium: 32px,
+  healine-font-small: 22px,
+);
+
+body{
+  background-color: map-get($color, bgc-secondary );
+}
+.frame{
+  h1{
+    color: map-get($color, font-primary);
+    font-size: map-get($headline-font, healine-font-large);
+  }
+  h2{
+    font-size: map-get($headline-font, healine-font-medium);
+  }
+  h3{
+    font-size: map-get($headline-font, healine-font-small);
+  }
+}
