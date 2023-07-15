@@ -8,7 +8,7 @@ $bgc_item: #eee;
 $portfolio_item_w: 200px;
 $portfolio_item_h: 200px;
 $portfolio_item_bdr: 10px;
-$portfolio-images-url: "images/";
+$portfolio-images-url: "img/";
 
 /* portfolio */
 .portfolio{
@@ -24,15 +24,36 @@ $portfolio-images-url: "images/";
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
-    .portfolio_item{
+    .portfolio_item {
       border: 1px solid;
       width: $portfolio_item_w;
       height: $portfolio_item_h;
       border-radius: $portfolio_item_bdr;
-      -webkit-border-radius: $portfolio_item_bdr;
-      -moz-border-radius: $portfolio_item_bdr;
-      -ms-border-radius: $portfolio_item_bdr;
-      -o-border-radius: $portfolio_item_bdr;
-}
+      background-image: url(img/blog-post-01.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &:nth-child(2){
+        background-image: url($portfolio-images-url + "blog-post-02.jpg");
+      }
+      &:nth-child(3){
+        background-image: url($portfolio-images-url + "blog-post-03.jpg");
+      }
+      &:nth-child(4){
+        background-image: url($portfolio-images-url + "blog-post-04.jpg");
+      }
+      &:nth-child(5){
+        background-image: url($portfolio-images-url + "blog-post-05.jpg");
+      }
+      &:nth-child(6){
+        background-image: url($portfolio-images-url + "blog-post-06.jpg");
+      }
+      &:nth-child(7){
+        background-image: url($portfolio-images-url + "blog-post-07.jpg");
+      }
+      &:nth-child(8){
+        background-image: url($portfolio-images-url + "blog-post-08.jpg");
+      }
+    }
   }
 }
