@@ -21,7 +21,6 @@
 } */
 
 
-
 /* @mixin and @include */
 @mixin headline{
   text-align: center;
@@ -44,10 +43,35 @@
   }
 }
 
+/* Arguments with @mixin and @include */
+//Buttons Mixin
+@mixin border-style($width, $style, $color){
+  border: $width $style $color;
+}
+
+
 .heading{
   @include headline;
 }
-
 .news_headline{
   @include headline;
+}
+
+.buttons {
+  button {
+    width: 200px;
+    padding: 7px;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+
+    &.approval {
+      @include border-style(2px, solid, blue)
+    }
+
+    &.refuse {
+      @include border-style(2px, dashed, red)
+    }
+  }
 }

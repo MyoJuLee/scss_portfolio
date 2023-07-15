@@ -21,6 +21,7 @@
   }
 } */
 /* @mixin and @include */
+/* Arguments with @mixin and @include */
 .heading {
   text-align: center;
   font-size: 36px;
@@ -61,4 +62,19 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.buttons button {
+  width: 200px;
+  padding: 7px;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+.buttons button.approval {
+  border: 2px solid blue;
+}
+.buttons button.refuse {
+  border: 2px dashed red;
 }
