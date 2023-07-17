@@ -1,0 +1,46 @@
+@charset "UTF-8";
+body {
+  background-color: #222;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heart_beat {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: #ff4757;
+  transform: rotate(45deg);
+  box-shadow: 0 -10px 100px #ff4757, 0 -10px 150px #ff4757, 0 -10px 2000px #ff4757;
+  animation: heart_beat 0.5s linear infinite;
+  /* scss에서는 종속된 자리에 keyframes를 넣어도 상관없다 (독립적으로 처리) */
+}
+@keyframes heart_beat {
+  0% {
+    /* transform_rotate사용시위효과를덮어쓰지않게이어서같이써준다 */
+    transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(45deg) scale(0.95);
+  }
+}
+.heart_beat::before, .heart_beat::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: inherit;
+  border-radius: 50%;
+}
+.heart_beat::before {
+  top: -50%;
+}
+.heart_beat::after {
+  left: -50%;
+}
