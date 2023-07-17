@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600&family=Noto+Sans+KR:wght@100&display=swap");
+/*
+logo색상
+#f24e1e
+#ff7262
+#a259ff
+#1abcfe
+#0acf83
+ */
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Figma logo */
+.figma {
+  width: 200px;
+}
+.figma > span {
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Hind", sans-serif;
+  font-weight: 500;
+  color: #222;
+  letter-spacing: 3px;
+  font-size: 66.6666666667px;
+}
+.figma .shape {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.figma .shape span {
+  width: 100px;
+  height: 100px;
+}
+.figma .shape span:nth-child(1) {
+  background-color: #f24e1e;
+  border-radius: 50% 0 0 50%;
+}
+.figma .shape span:nth-child(2) {
+  background-color: #ff7262;
+  border-radius: 0 50% 50% 0;
+}
+.figma .shape span:nth-child(3) {
+  background-color: #a259ff;
+  border-radius: 50% 0 0 50%;
+}
+.figma .shape span:nth-child(4) {
+  background-color: #1abcfe;
+  border-radius: 50%;
+}
+.figma .shape span:nth-child(5) {
+  background-color: #0acf83;
+  border-radius: 50% 0 50% 50%;
+}

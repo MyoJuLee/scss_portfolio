@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600&family=Noto+Sans+KR:wght@100&display=swap');
+
+/*
+logo색상
+#f24e1e
+#ff7262
+#a259ff
+#1abcfe
+#0acf83
+ */
+
+//Figma logo Variables
+$lg_family: 'Hind', sans-serif;
+$lg_weight: 500;
+$lg_width: 200px;
+$lg_color: #222;
+$lg_spacing: 3px;
+
+body{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Figma logo */
+.figma{
+  width: $lg_width;
+  >span{
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+    font-family: $lg_family;
+    font-weight: $lg_weight;
+    color: $lg_color;
+    letter-spacing: $lg_spacing;
+    font-size: $lg_width /3;
+  }
+  .shape{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    span {
+      width: $lg_width /2;
+      height: $lg_width /2;
+
+      &:nth-child(1) {
+        background-color: #f24e1e;
+        border-radius: 50% 0 0 50%;
+      }
+
+      &:nth-child(2) {
+        background-color: #ff7262;
+        border-radius: 0 50% 50% 0;
+      }
+
+      &:nth-child(3) {
+        background-color: #a259ff;
+        border-radius: 50% 0 0 50%;
+      }
+
+      &:nth-child(4) {
+        background-color: #1abcfe;
+        border-radius: 50%;
+      }
+
+      &:nth-child(5) {
+        background-color: #0acf83;
+        border-radius: 50% 0 50% 50%;
+      }
+    }
+  }
+}
